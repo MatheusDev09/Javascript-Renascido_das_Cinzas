@@ -48,10 +48,36 @@
 
   <!-- Script JavaScript embutido na página -->
   <script>
-
-
     // 1ª Digitação (Resolva aqui o exercício)
+    const timer = document.querySelector('#timer');
+    const start = document.querySelector('#startButton');
+    const pause = document.querySelector('#pauseButton');
+    const reset = document.querySelector('#resetButton');
+    
+    let timeCount = 0;
+    let idContador
+    
+    start.addEventListener('click', () => {
+    if (idContador === undefined) { // Quando ele inicia, idContador está undefined, logo, funciona. Enquanto ele não for resetado, não será criado "outro timer"
+    idContador = setInterval(() => {
+      timeCount++
+      timer.innerHTML = timeCount;
+    },1000);
+  }
+});
 
+    pause.addEventListener('click', () => {
+      clearInterval(idContador);
+      idContador = undefined;
+    })
+
+    reset.addEventListener('click', () => {
+      clearInterval(idContador);
+      idContador = undefined;
+      timeCount = 0;
+      timer.innerHTML = 0;
+      
+    })
 
   </script>
 </body>
