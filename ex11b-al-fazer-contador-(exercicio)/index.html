@@ -57,7 +57,19 @@
     ];
 
        // 1ª Digitação (Resolva aqui o exercício)
+    const botao = document.querySelector("#newQuoteButton");
+    const quote = document.querySelector("#quote");
+    let lastIndex // Evitar a mesma frase duas vezes seguidas
+    
 
+    botao.addEventListener('click', () => {
+      let index = 0;
+      while(index === lastIndex) { // Enquanto o Index for igual o lastIndex, ele vai rodar uma nova citação;
+        index = Math.floor(Math.random() * quotes.length);
+      }
+      quote.innerHTML = quotes[index];
+      lastIndex = index;
+    });
 
   </script>
 </body>
