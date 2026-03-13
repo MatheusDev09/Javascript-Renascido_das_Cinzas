@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: bisque;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+.labels {
+    display: flex;    
+    align-items: center;
+    width: 300px;
+    flex-direction: column;
+    justify-content: center;
+    background-color: bisque;
+    margin-top: 50px;
+}
+
+label {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input{
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    background-color: bisque;
+    opacity: 0.7;
+    border-radius: 10px;
+}
+
+input:hover{
+    opacity: 0.9;
+}
+.img {
+    width: 400px;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.SP { /* Imagem para cada bandeira. Preferi fazer assim, do que vários switch cases. Além de que ajuda na divisão de responsabilidade de cada arquivo */
+    background-image: url("img/SP.svg")
+} 
+
+.RJ {
+    background-image: url("img/RJ.png")
+}
+
+.AL {
+    background-image: url("img/AL.svg")
+}
+
+.AC {
+    background-image: url("img/AC.png")
+}
+
+.AM {
+    background-image: url("img/AM.png")
+}
+
+.AP {
+    background-image: url("img/AP.png")
+}
+
+.BA {
+    background-image: url("img/BA.svg")
+}
+
+.CE {
+    background-image: url("img/CE.svg")
+}
+
+.DF {
+    background-image: url("img/DF.svg")
+}
+
+.ES {
+    background-image: url("img/ES.png")
+}
+
+.GO {
+    background-image: url("img/GO.png")
+}
+
+.MA {
+    background-image: url("img/MA.svg")
+}
+
+.MG {
+    background-image: url("img/MG.png")
+}
+
+.MS {
+    background-image: url("img/MS.png")
+}
+
+.MT {
+    background-image: url("img/MT.png")
+}
+
+.PA {
+    background-image: url("img/PA.png")
+}
+
+.PB {
+    background-image: url("img/PB.png")
+}
+
+.PE {
+    background-image: url("img/PE.png")
+}
+
+.PI {
+    background-image: url("img/PI.png")
+}
+
+.PR {
+    background-image: url("img/PR.svg")
+}
+
+.RN {
+    background-image: url("img/RN.svg")
+}
+
+.RO {
+    background-image: url("img/RO.svg")
+}
+
+.RR {
+    background-image: url("img/RR.svg")
+}
+
+.RS {
+    background-image: url("img/RS.png")
+}
+
+.SC {
+    background-image: url("img/SC.png")
+}
+
+.SE {
+    background-image: url("img/SE.svg")
+}
+
+.TO {
+    background-image: url("img/TO.png")
+}
